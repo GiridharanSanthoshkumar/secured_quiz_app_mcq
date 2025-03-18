@@ -11,11 +11,14 @@
     "ios": {
       "supportsTablet": true
     },
+    
     "android": {
+      "enableHermes": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.giridharan.s.quiz_android_app"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +39,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "35b1815b-01dc-4b09-b9f0-04d6061b0a09"
+      }
+    },
+    "owner": "giridharan.s"
   }
 }
